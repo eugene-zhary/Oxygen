@@ -27,10 +27,6 @@ $menu-color: #373a39;
     font-size: 48px;
     line-height: 75px;
 
-    align-self: flex-start;
-
-    margin-bottom: 15px;
-
     &::after {
         content: "";
         position: absolute;
@@ -146,33 +142,51 @@ $menu-color: #373a39;
 //about
 .about {
     background-color: #f6f8fa;
-    height: 491px;
-    padding-top: 143px;
-    padding-left: 135px;
 
     &__content {
+        padding: 143px 135px 159px;
+
         display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
-    &__content-item {
-        height: 180px;
-        width: 770px;
-
-        margin-left: 133px;
+    &__text {
         padding-top: 9px;
+        width: 770px;
     }
 }
 
 //expertise
 .expertise {
-    padding-top: 143px;
-    padding-left: 135px;
-    padding-bottom: 164px;
+    &__content {
+        padding: 143px 135px 164px;
+    }
 
     &__statistic {
+        display: flex;
+        justify-content: space-between;
+
         margin-top: 89px;
         margin-bottom: 110px;
         height: 137px;
+    }
+
+    &__graphic {
+        width: 370px;
+    }
+
+    &__graphic-item {
+        font-family: "Open Sans";
+        font-size: 11px;
+        line-height: 20px;
+        letter-spacing: 1px;
+
+        color: #1d1d1d;
+    }
+
+    &__text {
+        width: 770px;
     }
 
     &__desc {
