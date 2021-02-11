@@ -458,6 +458,7 @@ h6 {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+  text-align: center;
 }
 
 .projects__item {
@@ -745,4 +746,83 @@ h6 {
   letter-spacing: 2px;
   color: #ffffff;
   background-color: #242121;
+}
+
+.social {
+  background-color: #373a39;
+}
+
+.social__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__content .menu__link {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 4px;
+  color: #fff;
+}
+
+.social__content .menu__link:visited {
+  color: #fff;
+}
+
+.social__logo {
+  margin: 110px 0 100px 0;
+  position: relative;
+}
+
+.social__logo::after {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  height: 2px;
+  width: 150px;
+  left: -54px;
+  background-color: #fcbb08;
+}
+
+.social__info {
+  margin: 65px 0 60px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  color: #a8a8a8;
+}
+
+.social__shape {
+  margin-bottom: 60px;
+}
+
+.footer {
+  background-color: #2a2c2b;
+}
+
+.footer__content {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  color: #cccccc;
 }

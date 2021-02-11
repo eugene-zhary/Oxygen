@@ -337,6 +337,7 @@ $menu-color: #373a39;
         padding: 165px 225px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        text-align: center;
     }
 
     &__item {
@@ -571,5 +572,74 @@ $menu-color: #373a39;
         letter-spacing: 2px;
         color: #ffffff;
         background-color: #242121;
+    }
+}
+
+.social {
+    background-color: #373a39;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .menu__link {
+            font-family: "Montserrat";
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 4px;
+            color: #fff;
+
+            &:visited {
+                color: #fff;
+            }
+        }
+    }
+
+    &__logo {
+        margin: 110px 0 100px 0;
+
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+
+            bottom: -24px;
+            height: 2px;
+            width: 150px;
+            left: -54px;
+            background-color: #fcbb08;
+        }
+    }
+
+    &__info {
+        margin: 65px 0 60px;
+        font-family: "Open Sans";
+        font-size: 14px;
+        line-height: 32px;
+        text-align: center;
+        color: #a8a8a8;
+    }
+
+    &__shape {
+        margin-bottom: 60px;
+    }
+}
+
+.footer {
+    background-color: #2a2c2b;
+
+    &__content {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: "Open Sans";
+        font-size: 12px;
+        line-height: 16px;
+
+        color: #cccccc;
     }
 }
