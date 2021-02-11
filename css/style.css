@@ -236,6 +236,7 @@ h6 {
 .about__text {
   padding-top: 9px;
   width: 770px;
+  overflow: auto;
 }
 
 .expertise__content {
@@ -256,14 +257,70 @@ h6 {
 
 .expertise__graphic {
   width: 370px;
-}
-
-.expertise__graphic-item {
   font-family: "Open Sans";
   font-size: 11px;
   line-height: 20px;
   letter-spacing: 1px;
+}
+
+.expertise__graphic-item {
+  width: 370px;
+  margin: 10px 0;
+  margin-right: 30px;
   color: #1d1d1d;
+  position: relative;
+}
+
+.expertise__graphic-item::after {
+  content: "";
+  position: absolute;
+  text-align: right;
+  height: 2px;
+  width: 100%;
+  top: -2px;
+  background-color: #f0f0f0;
+}
+
+.expertise__branding-persents {
+  position: relative;
+}
+
+.expertise__branding-persents::after {
+  content: "90%";
+  position: absolute;
+  text-align: right;
+  height: 2px;
+  width: 90%;
+  top: -2px;
+  background-color: #1d1d1d;
+}
+
+.expertise__design-persents {
+  position: relative;
+}
+
+.expertise__design-persents::after {
+  content: "80%";
+  position: absolute;
+  text-align: right;
+  height: 2px;
+  width: 80%;
+  top: -2px;
+  background-color: #1d1d1d;
+}
+
+.expertise__development-persents {
+  position: relative;
+}
+
+.expertise__development-persents::after {
+  content: "85%";
+  position: absolute;
+  text-align: right;
+  height: 2px;
+  width: 85%;
+  top: -2px;
+  background-color: #1d1d1d;
 }
 
 .expertise__text {

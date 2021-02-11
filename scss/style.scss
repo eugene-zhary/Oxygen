@@ -154,6 +154,7 @@ $menu-color: #373a39;
     &__text {
         padding-top: 9px;
         width: 770px;
+        overflow: auto;
     }
 }
 
@@ -174,15 +175,48 @@ $menu-color: #373a39;
 
     &__graphic {
         width: 370px;
-    }
 
-    &__graphic-item {
         font-family: "Open Sans";
         font-size: 11px;
         line-height: 20px;
         letter-spacing: 1px;
+    }
 
+    @mixin set-line($content, $persent, $color) {
+        position: relative;
+
+        &::after {
+            content: $content;
+            position: absolute;
+            text-align: right;
+
+            height: 2px;
+            width: $persent;
+
+            top: -2px;
+            background-color: $color;
+        }
+    }
+
+    &__graphic-item {
+        width: 370px;
+        margin: 10px 0;
+        margin-right: 30px;
         color: #1d1d1d;
+
+        @include set-line("", 100%, #f0f0f0);
+    }
+
+    &__branding-persents {
+        @include set-line("90%", 90%, #1d1d1d);
+    }
+
+    &__design-persents {
+        @include set-line("80%", 80%, #1d1d1d);
+    }
+
+    &__development-persents {
+        @include set-line("85%", 85%, #1d1d1d);
     }
 
     &__text {
