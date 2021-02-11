@@ -1,7 +1,9 @@
+@charset "UTF-8";
 /*set default style*/
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -218,6 +220,8 @@ h6 {
 
 .about {
   background-color: #f6f8fa;
+  max-height: 500px;
+  overflow: hidden;
 }
 
 .about__content {
@@ -234,9 +238,9 @@ h6 {
 }
 
 .about__text {
+  margin-left: 30px;
   padding-top: 9px;
   width: 770px;
-  overflow: auto;
 }
 
 .expertise__content {
@@ -250,8 +254,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 89px;
-  margin-bottom: 110px;
+  margin: 89px 0 110px 0;
   height: 137px;
 }
 
@@ -261,12 +264,12 @@ h6 {
   font-size: 11px;
   line-height: 20px;
   letter-spacing: 1px;
+  margin: 9px 30px 0 0;
 }
 
 .expertise__graphic-item {
   width: 370px;
-  margin: 10px 0;
-  margin-right: 30px;
+  margin: 0 0 32px 0;
   color: #1d1d1d;
   position: relative;
 }
@@ -325,6 +328,7 @@ h6 {
 
 .expertise__text {
   width: 770px;
+  overflow: hidden;
 }
 
 .expertise__desc {
@@ -361,4 +365,167 @@ h6 {
 
 .expertise__item-desc {
   width: 285px;
+}
+
+.magic {
+  background-color: #f6f8fa;
+  height: 840px;
+  overflow: hidden;
+}
+
+.magic__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.magic__text {
+  padding: 101px 135px 180px 130px;
+}
+
+.magic .description {
+  margin-top: 67px;
+}
+
+.portfolio__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 139px 131px 103px 135px;
+}
+
+.portfolio__header .menu {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.more-projects {
+  margin-top: 72px;
+  height: 100px;
+  background-color: #f6f8fa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.more-projects h3 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.projects__quote {
+  padding: 130px 0 148px;
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  overflow: hidden;
+  max-height: 450px;
+}
+
+.projects__quote-text {
+  color: #242121;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.projects__quote-author {
+  margin-top: 51px;
+  color: #9e9e9e;
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.projects__list {
+  padding: 165px 225px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.projects__item {
+  margin: 0 10px;
+}
+
+.projects__item-title {
+  color: #242121;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 73px;
+}
+
+.projects__item-desc {
+  color: #00b2a0;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.information {
+  background-color: #f6f8fa;
+}
+
+.information__content {
+  padding: 150px 0 150px 135px;
+}
+
+.information__title {
+  /* сверху | справа | снизу | слева */
+  color: #242121;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 32px;
+}
+
+.team__content {
+  padding: 120px 135px 164px;
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 110px;
+}
+
+.team__item {
+  text-align: center;
+}
+
+.team__person-name {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 35px;
+}
+
+.team__person-position {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 12px;
 }
