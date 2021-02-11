@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -528,4 +529,122 @@ h6 {
   font-size: 12px;
   line-height: 16px;
   margin-top: 12px;
+}
+
+.pricing {
+  background-color: #f6f8fa;
+}
+
+.pricing__content {
+  padding: 144px 135px 162px;
+}
+
+.pricing__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 95px;
+}
+
+.pricing__item {
+  position: relative;
+  width: 370px;
+  height: 583px;
+  background-color: #fff;
+  padding: 25px;
+  color: #242121;
+  font-family: "Open Sans";
+}
+
+.pricing__item-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.pricing__item-value {
+  position: relative;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 109px;
+  text-align: center;
+}
+
+.pricing__item-value::before {
+  content: "$";
+  position: absolute;
+  font-size: 40px;
+  bottom: 12px;
+  left: 90px;
+}
+
+.pricing__item-value::after {
+  content: "/mo";
+  position: absolute;
+  font-size: 20px;
+  top: 22px;
+}
+
+.pricing__item-logo {
+  text-align: center;
+  margin: 50px 0 30px 0;
+}
+
+.pricing__item-logo::after {
+  content: "Logo Design";
+}
+
+.pricing__item-website {
+  text-align: center;
+  margin: 50px 0 30px 0;
+}
+
+.pricing__item-website::after {
+  content: "Website Design";
+}
+
+.pricing__item-domain {
+  text-align: center;
+  margin: 50px 0 30px 0;
+}
+
+.pricing__item-domain::after {
+  content: "Domain Free";
+}
+
+.pricing__item-license {
+  text-align: center;
+  margin: 50px 0 30px 0;
+}
+
+.pricing__item-license::after {
+  content: "Month Free";
+}
+
+.pricing__item-storage {
+  text-align: center;
+  margin: 50px 0 30px 0;
+}
+
+.pricing__item-storage::after {
+  content: "GB Storage";
+}
+
+.pricing__item-submit {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1.2px;
+  color: #242121;
+  background-color: #fff;
 }
