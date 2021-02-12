@@ -652,6 +652,7 @@ h6 {
 
 .touch__content {
   margin-top: 292px;
+  height: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
